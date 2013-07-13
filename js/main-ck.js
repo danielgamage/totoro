@@ -1,0 +1,1 @@
+var currentTime=new Date,hours=currentTime.getHours(),body=document.getElementsByTagName("body")[0],theme=function(){hours>6&&hours<18?body.className="day":body.className="night"};theme();

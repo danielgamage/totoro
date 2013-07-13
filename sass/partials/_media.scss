@@ -1,0 +1,48 @@
+// ==|== media queries ======================================================
+// PLACEHOLDER Media Queries for Responsive Design.
+// These override the primary ('mobile first') styles
+// Modify as content requires.
+// ========================================================================== */
+
+@media only screen and (min-width: 36em) {
+  /* Style adjustments for viewports 
+  480px and over go here */
+	section {
+		padding: 2em;
+	}
+	body {
+		font-size: 1.2em;
+	}
+	#totoroperch {
+		width: 100%;
+		margin-left: 0;
+
+	}
+
+}
+
+@media only screen and (min-width: 60em) {
+  /* Style adjustments for viewports 768px and over go here */
+	body {
+		font-size: 1.4em;
+	}
+}
+
+@media only screen and (min-width: 100em) {
+  /* Style adjustments for viewports 768px and over go here */
+	body {
+		font-size: 1.6em;
+	}
+}
+
+
+
+// ==|== print styles =======================================================
+// Print styles.
+// Inlined to avoid required HTTP connection: h5bp.com/r
+// ========================================================================== */
+
+@media print {
+  
+  /* Style adjustments for print go here */
+}
