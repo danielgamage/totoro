@@ -18,9 +18,11 @@
 		margin-left: 0;
 
 	}
-	.dust {
-		display: none;
-	}
+  header h1{
+    -webkit-writing-mode: vertical-rl;
+    -moz-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+  }
 }
 
 @media only screen and (min-width: 60em) {
