@@ -31,7 +31,7 @@ header {
 	position: relative;
 	h1 {
 		font-size: 10em;
-		font-size: 10vh;
+		font-size: 17vmin;
 		letter-spacing: 0.1em;
 		font-family: 'jfont', sans-serif;
 		position: absolute;
@@ -93,8 +93,8 @@ img {
 }
 #sign {
 	bottom: 0;
-	left: 2em;
-	max-height: 90%;
+	max-height: 24em;
+	margin: auto;
 }
 #cliff {
 	position: absolute;
