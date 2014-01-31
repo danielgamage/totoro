@@ -2,3 +2,14 @@
 // see http://compass-style.org/docs/reference/compass/css3/font_face/
 
 //@import "compass/css3/font-face"
+@font-face {
+    font-family: 'jfont';
+    src: url('../fonts/jfont-Regular.eot');
+    src: url('../fonts/jfont-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/jfont-Regular.woff') format('woff'),
+         url('../fonts/jfont-Regular.ttf') format('truetype'),
+         url('../fonts/jfont-Regular.svg#jfontRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

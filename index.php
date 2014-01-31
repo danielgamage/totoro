@@ -9,11 +9,12 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>となりのトトロ</title>
-        <meta name="description" content="A ">
+        <meta name="description" content=" ">
         <meta name="author" content="daniel gamage">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
         <link rel="stylesheet" href="css/style.css">
-        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script type="text/javascript" src="//use.typekit.net/kpy6ubg.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     </head>
     <body class="night">
         <!--[if lt IE 8]>
