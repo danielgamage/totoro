@@ -21,7 +21,10 @@
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
         <header>
-            <h1 lang="ja">となりの<span>トトロ<span></h1>
+            <h1 lang="ja">
+                <span>となりの</span>
+                <span>トトロ<span>
+            </h1>
              <?php // include "img/clouds.svg" ?>
             <?php include "img/totorosm.svg" ?>
             <?php include "img/sign.svg" ?>
