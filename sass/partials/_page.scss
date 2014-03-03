@@ -358,121 +358,121 @@ footer {
 			fill: $darkblue;
 		}
 	}
-///  -------------  ///
-///  Daytime Theme  ///
-///  -------------  ///
+// ///  -------------  ///
+// ///  Daytime Theme  ///
+// ///  -------------  ///
 
-body.day {
-	background-color: #a88;
-	header {
-		background: $beige;
-		padding: 2em;
-		color: $yellow;
-	}
-	article {
-		background-color: $beige;
-		color: darken($beige, 50%);
-	}
-	.container {
-		background: linear-gradient( 0deg, lighten($beige, 10%), $beige);
-	}
-	#sign {
-		display: none;
-	}
-	#totorosm {
-		display: none;
-	}
-	.clouds {
-		path:nth-of-type(odd) {
-			fill: $yellow;
-		}
-		path:nth-of-type(even) {
-			fill: $yellow;
-		}
-	}
-	.light {
-		fill: $medblue;
-	}
-	#mouth {
-		fill: $white;
-	}
-	#nose {
-		fill: darken($darkblue, 5%);
-	}
-	#belly {
-		path {
-			fill: $darkgrey;
-			&:first-child {
-				fill: $belly;
-			}
-		}
-	}
-	#tree {
-		path:nth-child(1) {
-			fill: $darkgreen;
-		}
-		path:nth-child(2) {
-			fill: $green;
-		}
-		path:nth-child(3) {
-			fill: darken($darkgreen, 5%);
-		}
-	}
-	#trunk {
-		fill: darken($brown, 5%);
-	}
-	#house {
-		fill: darken($brown, 5%); 
-		#roof {
-			fill: $brown;
-		}
-		#light {
-			fill: darken($brown, 10%);
-		}
-	}
-	#grass {
-		fill: $green;
-	}
-	#bush {
-		fill: $darkgreen;
-	}
-	#talk {
-		polygon {
-			fill: $white;
-		}
-		path {
-			fill: $grey;
-		}
-	}
-	#eyes {
-		fill: $white;
-		ellipse:nth-child(even) {
-			fill: $darkblue;
-		}
-	}
-	#totorobody, #tail {
-		fill: darken($grey, 10%);
-	}
-	#shading {
-		fill: $grey;
-	}
-	.dust {
-		display: none;
-	}
-	#totorosm {
-		fill: $darkdarkblue;
-		#smeyeball {
-			fill: $white;
-		}
-		#smpupil {
-			fill: $darkblue;
-		}
-		#bag {
-			fill: $darkblue;
-		}
-	}
+// body.day {
+// 	background-color: #a88;
+// 	header {
+// 		background: $beige;
+// 		padding: 2em;
+// 		color: $yellow;
+// 	}
+// 	article {
+// 		background-color: $beige;
+// 		color: darken($beige, 50%);
+// 	}
+// 	.container {
+// 		background: linear-gradient( 0deg, lighten($beige, 10%), $beige);
+// 	}
+// 	#sign {
+// 		display: none;
+// 	}
+// 	#totorosm {
+// 		display: none;
+// 	}
+// 	.clouds {
+// 		path:nth-of-type(odd) {
+// 			fill: $yellow;
+// 		}
+// 		path:nth-of-type(even) {
+// 			fill: $yellow;
+// 		}
+// 	}
+// 	.light {
+// 		fill: $medblue;
+// 	}
+// 	#mouth {
+// 		fill: $white;
+// 	}
+// 	#nose {
+// 		fill: darken($darkblue, 5%);
+// 	}
+// 	#belly {
+// 		path {
+// 			fill: $darkgrey;
+// 			&:first-child {
+// 				fill: $belly;
+// 			}
+// 		}
+// 	}
+// 	#tree {
+// 		path:nth-child(1) {
+// 			fill: $darkgreen;
+// 		}
+// 		path:nth-child(2) {
+// 			fill: $green;
+// 		}
+// 		path:nth-child(3) {
+// 			fill: darken($darkgreen, 5%);
+// 		}
+// 	}
+// 	#trunk {
+// 		fill: darken($brown, 5%);
+// 	}
+// 	#house {
+// 		fill: darken($brown, 5%); 
+// 		#roof {
+// 			fill: $brown;
+// 		}
+// 		#light {
+// 			fill: darken($brown, 10%);
+// 		}
+// 	}
+// 	#grass {
+// 		fill: $green;
+// 	}
+// 	#bush {
+// 		fill: $darkgreen;
+// 	}
+// 	#talk {
+// 		polygon {
+// 			fill: $white;
+// 		}
+// 		path {
+// 			fill: $grey;
+// 		}
+// 	}
+// 	#eyes {
+// 		fill: $white;
+// 		ellipse:nth-child(even) {
+// 			fill: $darkblue;
+// 		}
+// 	}
+// 	#totorobody, #tail {
+// 		fill: darken($grey, 10%);
+// 	}
+// 	#shading {
+// 		fill: $grey;
+// 	}
+// 	.dust {
+// 		display: none;
+// 	}
+// 	#totorosm {
+// 		fill: $darkdarkblue;
+// 		#smeyeball {
+// 			fill: $white;
+// 		}
+// 		#smpupil {
+// 			fill: $darkblue;
+// 		}
+// 		#bag {
+// 			fill: $darkblue;
+// 		}
+// 	}
 
-	footer {
-		background-color: $green;
-	}
-}
+// 	footer {
+// 		background-color: $green;
+// 	}
+// }
