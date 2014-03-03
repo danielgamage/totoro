@@ -23,6 +23,22 @@
     -moz-writing-mode: vertical-rl;
     writing-mode: vertical-rl;
   }
+  .dust {
+    -webkit-animation: bounce 2.5s infinite;
+    animation: bounce 2.5s infinite;
+    &:nth-child(2n+1) {
+      -webkit-animation: bounce 3s infinite;
+      animation: bounce 3s infinite;
+    }
+    &:nth-child(3n) {
+      -webkit-animation: bounce 4s infinite;
+      animation: bounce 4s infinite;
+    }
+    &:nth-child(4n) {
+      -webkit-animation: bounce 5s infinite;
+      animation: bounce 5s infinite;
+    }
+  }
 }
 
 @media only screen and (min-width: 60em) {

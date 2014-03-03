@@ -148,37 +148,26 @@ img {
 }
 .dust {
 	position: absolute;
-	-webkit-animation: bounce 2.5s infinite;
-	animation: bounce 2.5s infinite;
 	width: 2%;
 	height: 2%;
 	pointer-events: none;
 	z-index: 50;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
 	-webkit-filter: drop-shadow(0 0 0.5em);
 	filter: drop-shadow(0 0 0.5em);
 	&:nth-child(2n) {
 		width: 2.5%;
 		height: 2.5%;
-		-webkit-filter: blur(0.04em);
-		filter: blur(0.04em);
 		z-index: 30;
 	}
-	&:nth-child(2n+1) {
-		-webkit-animation: bounce 3s infinite;
-		animation: bounce 3s infinite;
-	}
 	&:nth-child(3n) {
-		-webkit-animation: bounce 4s infinite;
-		animation: bounce 4s infinite;
-		-webkit-filter: blur(0.08em);
 		width: 3%;
 		height: 3%;
 		z-index: 50;
 	}
 	&:nth-child(4n) {
-		-webkit-animation: bounce 5s infinite;
-		animation: bounce 5s infinite;
-		-webkit-filter: blur(0.12em);
 		width: 4%;
 		height: 4%;
 		z-index: 70;
