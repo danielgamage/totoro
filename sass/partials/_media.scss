@@ -24,6 +24,7 @@
     writing-mode: vertical-rl;
   }
   .dust {
+    display: block;
     -webkit-animation: bounce 2.5s infinite;
     animation: bounce 2.5s infinite;
     &:nth-child(2n+1) {
