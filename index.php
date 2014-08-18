@@ -13,8 +13,6 @@
         <meta name="author" content="daniel gamage">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
         <link rel="stylesheet" href="css/style.css">
-        <script type="text/javascript" src="//use.typekit.net/kpy6ubg.js"></script>
-        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     </head>
     <body class="night">
         <!--[if lt IE 8]>
