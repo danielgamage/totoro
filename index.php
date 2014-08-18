@@ -49,7 +49,7 @@
         </div>
 
         <footer>
-                <h3 lang="ja">2013 ダニエルガマジュ</h3>
+                <h3 lang="ja"><?= date("Y"); ?> Daniel Gamage</h3>
                 <p lang="ja">お世話になりました、トトロ。</p>
         </footer>
         <?php // <script src="js/main.js"></script> ?>
