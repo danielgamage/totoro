@@ -9,8 +9,6 @@ body, select, input, textarea {
 	margin: 0;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	-webkit-transition: $transitions;
-	transition: $transitions;
 }
 html {
 	-ms-overflow-y: scroll;
@@ -73,6 +71,10 @@ article {
 }
 svg{
 	display: block;
+	*{
+		-webkit-transition: $transitions;
+		transition: $transitions;
+	}
 }
 img {
 	float: none;
