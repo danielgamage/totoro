@@ -22,6 +22,7 @@ body {
 	color: $white;
 	-ms-overflow-x: hidden;
 		overflow-x: hidden;
+	cursor: url('../img/paw.svg') 1 1, auto;
 }
 header {
 	padding: 2em 2em 0 2em;
@@ -71,6 +72,14 @@ article {
 }
 a{
 	color: inherit;
+	text-decoration: none;
+	border-bottom: 0.1em solid;
+	transition: border 0.2s ease;
+	&:hover,
+	&:focus{
+		border-width: 0.05em;
+//		cursor: url('../img/paw-open.svg') 1 1, auto; bad perf
+	}
 }
 svg{
 	display: block;
