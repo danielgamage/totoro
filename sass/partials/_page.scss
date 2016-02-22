@@ -31,10 +31,10 @@ header {
 	h1 {
 		font-size: 10em;
 		font-size: 15vmin;
-		letter-spacing: 0.1em;
 		font-family: 'jfont', sans-serif;
 		position: absolute;
 		margin: 0;
+    line-height: 1.1
 		span {
 			display: block;
 			white-space: nowrap;
@@ -171,8 +171,6 @@ img {
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
 	backface-visibility: hidden;
-	-webkit-filter: drop-shadow(0 0 0.5em);
-	filter: drop-shadow(0 0 0.5em);
 	&:nth-child(2n) {
 		width: 2.5%;
 		height: 2.5%;
@@ -298,7 +296,7 @@ footer {
 		fill: $darkblue;
 	}
 	#house {
-		fill: $darkdarkblue; 
+		fill: $darkdarkblue;
 		#roof {
 			fill: $darkblue;
 		}
@@ -442,7 +440,7 @@ footer {
 // 		fill: darken($brown, 5%);
 // 	}
 // 	#house {
-// 		fill: darken($brown, 5%); 
+// 		fill: darken($brown, 5%);
 // 		#roof {
 // 			fill: $brown;
 // 		}

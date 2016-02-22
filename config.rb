@@ -6,8 +6,6 @@ javascripts_dir = "js"
 
 
 # Require any additional compass plugins installed on your system.
-require 'modular-scale'
-require 'breakpoint'
 
 # You can select your preferred output style here (can be overridden via the command line):
 # output_style = :expanded or :nested or :compact or :compressed
@@ -20,6 +18,7 @@ relative_assets = true
 
 # To disable debugging comments that display the original location of your selectors. Uncomment:
 # line_comments = false
+
 
 # Pass options to sass. For development, we turn on the FireSass-compatible
 # debug_info if the firesass config variable above is true.
