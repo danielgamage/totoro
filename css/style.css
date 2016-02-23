@@ -533,9 +533,10 @@ header {
     font-family: 'jfont', sans-serif;
     position: absolute;
     margin: 0;
-    line-height: 1.1 span;
-      line-height-display: block;
-      line-height-white-space: nowrap; }
+    line-height: 1.1; }
+    header h1 span {
+      display: block;
+      white-space: nowrap; }
 
 article {
   padding: 4em 1em 0;
