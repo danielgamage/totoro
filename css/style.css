@@ -490,7 +490,7 @@ table {
 @font-face {
   font-family: 'jfont';
   src: url("../fonts/jfont-regular.eot");
-  src: url("../fonts/jfont-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/jfont-regular.woff") format("woff"), url("../fonts/jfont-regular.woff2") format("woff2"), url("../fonts/jfont-regular.ttf") format("truetype");
+  src: url("../fonts/jfont-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/jfont-regular.woff2") format("woff2"), url("../fonts/jfont-regular.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
