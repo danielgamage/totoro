@@ -1,30 +1,44 @@
-var gulp         = require('gulp');
-var browserSync  = require('browser-sync').create();
-var sass         = require('gulp-sass');
-var postcss      = require('gulp-postcss');
-var sourcemaps   = require('gulp-sourcemaps');
-var cssnext      = require("postcss-cssnext");
+var gulp         = require('gulp'),
+		browserSync  = require('browser-sync').create(),
+		sass         = require('gulp-sass'),
+		postcss      = require('gulp-postcss'),
+		sourcemaps   = require('gulp-sourcemaps'),
+		cssnext      = require("postcss-cssnext"),
+    include      = require("gulp-include");
 
 // Static Server + watching scss/html files
 gulp.task('serve', ['sass'], function() {
 
 	browserSync.init({
+		baseDir: "dist",
 		proxy: "localhost/projects/totoro"
 	});
 
 	gulp.watch(["sass/*.scss", "sass/*/*.scss"], ['sass']);
-	gulp.watch("*.html").on('change', browserSync.reload);
+	gulp.watch("*.html", ['html']);
+	gulp.watch("fonts/*.*", ['fonts']);
 	gulp.watch("*.js").on('change', browserSync.reload);
 });
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {
   return gulp.src('sass/*.scss')
-	.pipe(sass())
-	.pipe(postcss([ cssnext() ]))
-	.pipe(gulp.dest('css'))
-	.pipe(browserSync.stream());
+		.pipe(sass())
+		.pipe(postcss([ cssnext() ]))
+		.pipe(gulp.dest('dist/css'))
+		.pipe(browserSync.stream());
+});
 
+gulp.task('fonts', function() {
+	return gulp.src('fonts/*.*')
+		.pipe(gulp.dest('dist/fonts'));
+});
+
+gulp.task('html', function() {
+	return gulp.src('index.html')
+		.pipe(include())
+			.on('error', console.log)
+		.pipe(gulp.dest("dist/"));
 });
 
 gulp.task('default', ['serve']);
