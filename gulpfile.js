@@ -4,7 +4,8 @@ var gulp         = require('gulp'),
 		postcss      = require('gulp-postcss'),
 		sourcemaps   = require('gulp-sourcemaps'),
 		cssnext      = require("postcss-cssnext"),
-    include      = require("gulp-include");
+    include      = require("gulp-include"),
+		ghPages      = require('gulp-gh-pages');
 
 // Static Server + watching scss/html files
 gulp.task('serve', ['sass'], function() {
@@ -34,11 +35,21 @@ gulp.task('fonts', function() {
 		.pipe(gulp.dest('dist/fonts'));
 });
 
+gulp.task('js', function() {
+	return gulp.src('js/*.*')
+		.pipe(gulp.dest('dist/js'));
+});
+
 gulp.task('html', function() {
 	return gulp.src('index.html')
 		.pipe(include())
 			.on('error', console.log)
 		.pipe(gulp.dest("dist/"));
+});
+
+gulp.task('deploy', function() {
+  return gulp.src('./dist/**/*')
+    .pipe(ghPages());
 });
 
 gulp.task('default', ['serve']);
