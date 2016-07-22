@@ -1,11 +1,13 @@
 var currentTime = new Date();
 var hours = currentTime.getHours();
-var body = document.getElementsByTagName("body")[0];
+var body = document.querySelector("body");
 
-var theme = function () {
+function theme() {
 	if (hours > 6 && hours < 18) {
+		console.log("day")
 		body.className = "day";
 	} else {
+		console.log("night")
 		body.className = "night";
 	}
 };

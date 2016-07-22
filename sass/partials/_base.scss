@@ -23,7 +23,6 @@ $white: #ECECE7;
 $red: #E96151;
 $green: #526F2F;
 $darkgreen: #415E1F;
-$beige: green;
 $brown: #50432F;
 $skyblue: #5880B8;
 $grey: #61615D;
@@ -33,6 +32,8 @@ $belly: #BBBB9A;
 $clouddark: #112f55;
 $cloudlight: #386690;
 $yellow: #EBE2D7;
+$sky-day: #cad7e6;
+$sky-day: #cad7e6;
 
 $transitions:
 	color 0.1s ease,
@@ -41,9 +42,9 @@ $transitions:
 	background 0.1s ease,
 	opacity 0.1s ease,
 	height 0.1s ease,
-	-webkit-transform 0.2s ease,	
+	-webkit-transform 0.2s ease,
 	text-shadow 0.1s ease;
-	
+
 // Keyframes
 
 @mixin stroll {
@@ -55,7 +56,7 @@ $transitions:
 		-webkit-transform: translateX(20em) scaleX(-1);
 		transform: translateX(20em) scaleX(-1);
 	}
-	to { 
+	to {
 		-webkit-transform: translateX(0) scaleX(-1);
 		transform: translateX(0) scaleX(-1);
 	}
@@ -116,4 +117,3 @@ $transitions:
 @keyframes flicker {
 	@include flicker;
 }
-

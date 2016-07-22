@@ -2,8 +2,8 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> 
-    <html lang="en ja" class="no-js"> 
+<!--[if gt IE 8]><!-->
+    <html lang="en ja" class="no-js">
 <!--<![endif]-->
     <head>
         <meta charset="utf-8">
@@ -49,10 +49,10 @@
         </div>
 
         <footer>
-                <h3 lang="ja"><?= date("Y"); ?> <a href="http://danielgamage.com/">Daniel Gamage</a></h3>
+                <h3 lang="ja"><span class="date"></span> <a href="http://danielgamage.com/">Daniel Gamage</a></h3>
                 <p lang="ja">お世話になりました、トトロ。</p>
         </footer>
-        <?php // <script src="js/main.js"></script> ?>
+        <script src="js/main.js"></script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

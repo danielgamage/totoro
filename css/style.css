@@ -531,7 +531,6 @@ header {
     font-size: 10em;
     font-size: 15vmin;
     font-family: 'dorjy';
-    position: absolute;
     margin: 0;
     line-height: 1.1; }
     header h1 span {
@@ -619,17 +618,13 @@ img {
   #totoroperch #mouth {
     -webkit-transform-origin: center center;
     -webkit-transform: scaleY(0) scaleX(0.9);
-    -webkit-transform-origin: center center;
-            transform-origin: center center;
-    -webkit-transform: scaleY(0) scaleX(0.9);
-            transform: scaleY(0) scaleX(0.9); }
+    transform-origin: center center;
+    transform: scaleY(0) scaleX(0.9); }
   #totoroperch #talk {
     -webkit-transform-origin: -30% 90%;
     -webkit-transform: scaleY(0.001) scaleX(0.1);
-    -webkit-transform-origin: -30% 90%;
-            transform-origin: -30% 90%;
-    -webkit-transform: scaleY(0.001) scaleX(0.1);
-            transform: scaleY(0.001) scaleX(0.1);
+    transform-origin: -30% 90%;
+    transform: scaleY(0.001) scaleX(0.1);
     opacity: 0; }
   #totoroperch:hover #mouth {
     -webkit-transform: scaleY(1) scaleX(1);
@@ -814,8 +809,81 @@ footer {
   #totorosm #bag {
     fill: #081e3f; }
 
+body.day {
+  background-color: #cad7e6; }
+  body.day header {
+    background: #cad7e6;
+    padding: 2em;
+    color: #a7bdd6; }
+  body.day article {
+    background-color: #cad7e6;
+    color: #395678; }
+  body.day .container {
+    background: -webkit-linear-gradient(bottom, #85a3c5, #cad7e6);
+    background: linear-gradient(0deg, #85a3c5, #cad7e6); }
+  body.day #sign {
+    display: none; }
+  body.day #totorosm {
+    display: none; }
+  body.day .clouds path:nth-of-type(odd) {
+    fill: #EBE2D7; }
+  body.day .clouds path:nth-of-type(even) {
+    fill: #EBE2D7; }
+  body.day .light {
+    fill: #112B52; }
+  body.day #mouth {
+    fill: #ECECE7; }
+  body.day #nose {
+    fill: #051328; }
+  body.day #belly path {
+    fill: #333; }
+    body.day #belly path:first-child {
+      fill: #BBBB9A; }
+  body.day #tree path:nth-child(1) {
+    fill: #415E1F; }
+  body.day #tree path:nth-child(2) {
+    fill: #526F2F; }
+  body.day #tree path:nth-child(3) {
+    fill: #344b19; }
+  body.day #trunk {
+    fill: #403626; }
+  body.day #house {
+    fill: #403626; }
+    body.day #house #roof {
+      fill: #50432F; }
+    body.day #house #light {
+      fill: #30281c; }
+  body.day #grass {
+    fill: #526F2F; }
+  body.day #bush {
+    fill: #415E1F; }
+  body.day #talk polygon {
+    fill: #ECECE7; }
+  body.day #talk path {
+    fill: #61615D; }
+  body.day #eyes {
+    fill: #ECECE7; }
+    body.day #eyes ellipse:nth-child(even) {
+      fill: #081e3f; }
+  body.day #totorobody, body.day #tail {
+    fill: #474744; }
+  body.day #shading {
+    fill: #61615D; }
+  body.day .dust {
+    display: none; }
+  body.day #totorosm {
+    fill: #091830; }
+    body.day #totorosm #smeyeball {
+      fill: #ECECE7; }
+    body.day #totorosm #smpupil {
+      fill: #081e3f; }
+    body.day #totorosm #bag {
+      fill: #081e3f; }
+  body.day footer {
+    background-color: #526F2F; }
+
 @media only screen and (min-width: 36em) {
-  /* Style adjustments for viewports 
+  /* Style adjustments for viewports
   480px and over go here */
   section {
     padding: 2em; }
@@ -824,7 +892,10 @@ footer {
   #totoroperch {
     width: 100%;
     margin-left: 0; }
+  header {
+    min-height: 34rem; }
   header h1 {
+    position: absolute;
     -webkit-writing-mode: vertical-rl;
     -moz-writing-mode: vertical-rl;
     -ms-writing-mode: tb-rl;
@@ -852,3 +923,6 @@ footer {
   /* Style adjustments for viewports 768px and over go here */
   body {
     font-size: 1.6em; } }
+
+@media print {
+  /* Style adjustments for print go here */ }
